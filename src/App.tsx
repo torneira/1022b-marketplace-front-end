@@ -25,8 +25,8 @@ function App() {
         return(
           <div key={prod.id}  className='produto-item'>
             <h1>{prod.nome}</h1>
-            <p>{prod.imagem}</p>
-            <img src={prod.preco} alt="Imagem do celular"/>
+            <img src={prod.imagem} alt="Imagem do celular"/>
+            <p>{prod.preco}</p>
             <p>{prod.descricao}</p>
           </div>
         )
