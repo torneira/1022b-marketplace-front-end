@@ -42,7 +42,7 @@ function App() {
               <h1>
                 {prod.nome}
               </h1>
-              <p>{prod.imagem}</p>
+              <img src={prod.imagem}></img>
               <p>{prod.preco}</p>
               <p>{prod.descricao}</p>
             </div>
