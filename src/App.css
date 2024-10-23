@@ -67,11 +67,13 @@
 }
 
 .produto-item h1 {
+  margin-top: 20px;
   font-size: 1.5em;
   color: #ffffff;
 }
 
 .produto-item p {
+  margin-top: 20px;
   font-size: 1em;
   color: #ffffff;
 }
@@ -96,17 +98,18 @@
 }
 
 .usuario-item h1 {
+  margin-top: 20px;
   font-size: 1.5em;
   color: #ffffff;
 }
 
 .usuario-item p {
+  margin-top: 20px;
   font-size: 1em;
   color: #ffffff;
 }
 
 .titulo{
-  text-align: center;
   font-size: 50px;
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
