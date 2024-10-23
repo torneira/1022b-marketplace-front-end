@@ -104,3 +104,11 @@
   font-size: 1em;
   color: #ffffff;
 }
+
+.titulo{
+  font-size: large;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgb(152, 37, 156)
+}
