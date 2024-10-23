@@ -110,6 +110,7 @@
 }
 
 .titulo{
+  display: flex;
   align-self: first baseline;
   font-size: 50px;
   font-family: "Teko", sans-serif;
