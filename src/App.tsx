@@ -34,8 +34,8 @@ function App() {
   
   return (
     <>
+    <h2 className="titulo">Produtos</h2>
     <div className='container-produtos'>
-      <h2 className="titulo">Produtos</h2>
       {
         produtos.map(prod=>{
           return(
@@ -51,8 +51,8 @@ function App() {
         })
       }
        </div>
-       <div className='container-usuarios'>
        <h2 className="titulo">Usuários</h2>
+       <div className='container-usuarios'>
       {
         usuarios.map(user=>{
           return(
