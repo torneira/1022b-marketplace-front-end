@@ -48,6 +48,8 @@
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  position: absolute; /* Adiciona a propriedade position: absolute */
+  top: 70px; /* Ajuste o valor para a distância desejada */
 }
 
 /* Estilo para cada item de produto */
@@ -85,6 +87,8 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  position: absolute; /* Adiciona a propriedade position: absolute */
+  top: 120px; /* Ajuste o valor para a distância desejada */
 }
 
 /* Estilo para cada item de usuário */
@@ -109,12 +113,12 @@
   color: #ffffff;
 }
 
-.titulo{
+.titulo {
   display: flex;
-  align-self: first baseline;
   font-size: 50px;
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: rgb(152, 37, 156)
+  color: rgb(152, 37, 156);
+  position: relative; /* Adiciona a propriedade position: relative */
 }
