@@ -35,7 +35,7 @@ function App() {
   return (
     <>
     <div className='container-produtos'>
-    <h1 className="titulo">Produtos</h1>
+      <h1 className="titulo">Produtos</h1>
       {
         produtos.map(prod=>{
           return(
