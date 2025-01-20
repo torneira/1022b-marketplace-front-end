@@ -43,7 +43,7 @@ function App() {
               <p>{prod.preco}</p>
               <p>{prod.descricao}</p>
               <button onClick={()=>{handleExcluir(prod.id)}}>Excluir</button>
-              <Link to="">Alterar</Link>
+              <Link to={`/alterar-produto/${prod.id}`}>Alterar</Link>
             </div>
           )
         })}
