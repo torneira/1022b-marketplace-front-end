@@ -1,8 +1,18 @@
 import { useParams } from "react-router-dom";
-import { FormEvent, useState, ChangeEvent } from "react";
+import { FormEvent, useState, ChangeEvent, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 function AlterarProduto(){
     const {id} = useParams()
+    useEffect(()=>{
+        fetch(`http://localhost:8000/produtos/${id}`)
+        .then(resposta=>resposta.json())
+        .then(dados=>{
+            setDescricao(dados.descricao)
+            setNome(dados.nome)
+            setPreco(dados.preco)
+            setImagem(dados.imagem)
+        })
+      },[])
     const navigate = useNavigate();
         const [descricao,setDescricao] = useState("")
         const [nome,setNome] = useState("")
@@ -57,19 +67,19 @@ function AlterarProduto(){
                 </div>
                 <div>
                     <label htmlFor="nome">nome</label>
-                    <input type="text" name="nome" onChange={handleNome} />
+                    <input type="text" name="nome" value={nome} onChange={handleNome} />
                 </div>
                 <div>
                     <label htmlFor="descricao">descricao</label>
-                    <input type="text" name="descricao" onChange={handleDescricao} />
+                    <input type="text" name="descricao" value={descricao} onChange={handleDescricao} />
                 </div>
                 <div>
                     <label htmlFor="preco">preço</label>
-                    <input type="text" name="preco" onChange={handlePreco} />
+                    <input type="text" name="preco" value={preco} onChange={handlePreco} />
                 </div>
                 <div>
                     <label htmlFor="imagem">imagem</label>
-                    <input type="text" name="imagem" onChange={handleImagem}/>
+                    <input type="text" name="imagem" value={imagem} onChange={handleImagem}/>
                 </div>
                 <div>
                     <input type="submit" value="Cadastrar"/>
