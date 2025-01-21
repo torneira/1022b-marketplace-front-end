@@ -13,25 +13,24 @@ function AlterarProduto(){
             event.preventDefault();
             console.log("Tentei cadastrar produtos");
             const produto = {
-                id: id,
                 nome: nome,
                 descricao: descricao,
                 preco: preco,
                 imagem: imagem
             }
-            fetch("http://localhost:8000/produtos",{
-                method: "POST",
+            fetch(`http://localhost:8000/produtos/${id}`,{
+                method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(produto)
             }).then(response => {
                 if(response.status === 200){
-                    alert("Produto cadastrado com sucesso")
+                    alert("Produto alterado com sucesso")
                     navigate("/")
                 }
                 else{
-                    alert("Erro ao cadastrar produto")
+                    alert("Erro ao alterar produto")
                 }
             })
         }
