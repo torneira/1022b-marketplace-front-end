@@ -48,8 +48,8 @@
   box-shadow: 0 0 10px #f0f0f0;
 }
 .produto-item>img{
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 .container-produtos{
   display: grid;
